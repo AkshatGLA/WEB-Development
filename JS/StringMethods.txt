@@ -1,0 +1,191 @@
+1. charAt(index)  
+   - Returns the character at a specified index.  
+   "hello".charAt(1)  // "e"
+
+2. charCodeAt(index)  
+   - Returns the UTF-16 code of the character at a given position.  
+   "hello".charCodeAt(1)  // 101
+
+3. codePointAt(index)  
+   - Returns the Unicode code point at a given position.  
+   "hello".codePointAt(1)  // 101
+
+4. concat(string2, string3, ...)  
+   - Joins multiple strings together.  
+   "hello".concat(" world")  // "hello world"
+
+5. endsWith(searchString, length)  
+   - Checks if the string ends with the given characters.  
+   "hello".endsWith("lo")  // true
+
+6. includes(searchString, position)  
+   - Checks if the string contains a given substring.  
+   "hello".includes("ell")  // true
+
+7. indexOf(searchValue, startIndex)  
+   - Returns the index of the first occurrence of the specified substring.  
+   "hello".indexOf("l")  // 2
+
+8. lastIndexOf(searchValue, startIndex)  
+   - Returns the last occurrence index of the specified substring.  
+   "hello".lastIndexOf("l")  // 3
+
+9. localeCompare(compareString)  
+   - Compares two strings in the current locale.  
+   "apple".localeCompare("banana")  // -1 (because "apple" comes before "banana")
+
+10. match(regex)  
+    - Finds matches based on a regex pattern.  
+    "hello".match(/l/g)  // ["l", "l"]
+
+11. matchAll(regex)  
+    - Returns an iterator of all matches.  
+    [..."hello".matchAll(/l/g)]  // [["l"], ["l"]]
+
+12. normalize(form)  
+    - Normalizes Unicode characters into a specified form.  
+    "\u1E9B\u0323".normalize("NFC")
+
+13. padEnd(targetLength, padString)  
+    - Adds padding at the end of the string.  
+    "hi".padEnd(5, "!")  // "hi!!!"
+
+14. padStart(targetLength, padString)  
+    - Adds padding at the beginning of the string.  
+    "42".padStart(5, "0")  // "00042"
+
+15. repeat(count)  
+    - Repeats a string multiple times.  
+    "ha".repeat(3)  // "hahaha"
+
+16. replace(searchValue, replaceValue)  
+    - Replaces the first occurrence of a string or regex match.  
+    "hello".replace("l", "L")  // "heLlo"
+
+17. replaceAll(searchValue, replaceValue)  
+    - Replaces all occurrences of a string or regex match.  
+    "hello".replaceAll("l", "L")  // "heLLo"
+
+18. search(regex)  
+    - Searches for a match using regex and returns the index of the first match.  
+    "hello".search(/l/)  // 2
+
+19. slice(start, end)  
+    - Extracts part of the string and returns a new string.  
+    "hello".slice(1, 4)  // "ell"
+
+20. split(separator, limit)  
+    - Splits a string into an array.  
+    "hello world".split(" ")  // ["hello", "world"]
+
+21. startsWith(searchString, position)  
+    - Checks if a string starts with a given substring.  
+    "hello".startsWith("he")  // true
+
+22. substring(start, end)  
+    - Extracts characters between start and end.  
+    "hello".substring(1, 4)  // "ell"
+
+23. toLocaleLowerCase()  
+    - Converts to lowercase, considering locale.  
+    "İSTANBUL".toLocaleLowerCase("tr")  // "istanbul"
+
+24. toLocaleUpperCase()  
+    - Converts to uppercase, considering locale.  
+    "istanbul".toLocaleUpperCase("tr")  // "İSTANBUL"
+
+25. toLowerCase()  
+    - Converts the string to lowercase.  
+    "HELLO".toLowerCase()  // "hello"
+
+26. toUpperCase()  
+    - Converts the string to uppercase.  
+    "hello".toUpperCase()  // "HELLO"
+
+27. toString()  
+    - Returns the string representation of an object.  
+    (123).toString()  // "123"
+
+28. trim()  
+    - Removes whitespace from both ends of a string.  
+    "  hello  ".trim()  // "hello"
+
+29. trimEnd()  
+    - Removes whitespace from the end of a string.  
+    "  hello  ".trimEnd()  // "  hello"
+
+30. trimStart()  
+    - Removes whitespace from the beginning of a string.  
+    "  hello  ".trimStart()  // "hello  "
+
+31. valueOf()  
+    - Returns the primitive value of a string object.  
+    new String("hello").valueOf()  // "hello"
+
+32. at(index)  
+    - Returns the character at a specific index (supports negative indices).  
+    "hello".at(-1)  // "o"
+
+33. fromCharCode(code1, code2, ...)  
+    - Converts Unicode values to characters.  
+    String.fromCharCode(65, 66, 67)  // "ABC"
+
+34. fromCodePoint(code1, code2, ...)  
+    - Converts Unicode code points to characters.  
+    String.fromCodePoint(128512)  // "😀"
+
+35. raw(template, ...substitutions)  
+    - Returns the raw string of a template literal.  
+    String.raw`Hello\nWorld`  // "Hello\\nWorld"
+
+36. anchor(name) *(deprecated)*  
+    - Creates an HTML `<a>` element with the given name.  
+    "Google".anchor("google")  
+
+37. big() *(deprecated)*  
+    - Creates an HTML `<big>` element.  
+    "hello".big()  
+
+38. blink() *(deprecated)*  
+    - Creates an HTML `<blink>` element.  
+    "hello".blink()  
+
+39. bold() *(deprecated)*  
+    - Creates an HTML `<b>` element.  
+    "hello".bold()  
+
+40. fixed() *(deprecated)*  
+    - Creates an HTML `<tt>` (monospace) element.  
+    "hello".fixed()  
+
+41. fontcolor(color) *(deprecated)*  
+    - Creates an HTML `<font>` element with the specified color.  
+    "hello".fontcolor("red")  
+
+42. fontsize(size) *(deprecated)*  
+    - Creates an HTML `<font>` element with the specified size.  
+    "hello".fontsize(5)  
+
+43. italics() *(deprecated)*  
+    - Creates an HTML `<i>` element.  
+    "hello".italics()  
+
+44. link(url) *(deprecated)*  
+    - Creates an HTML `<a>` hyperlink element.  
+    "Google".link("https://google.com")  
+
+45. small() *(deprecated)*  
+    - Creates an HTML `<small>` element.  
+    "hello".small()  
+
+46. strike() *(deprecated)*  
+    - Creates an HTML `<strike>` element.  
+    "hello".strike()  
+
+47. sub() *(deprecated)*  
+    - Creates an HTML `<sub>` (subscript) element.  
+    "hello".sub()  
+
+48. sup() *(deprecated)*  
+    - Creates an HTML `<sup>` (superscript) element.  
+    "hello".sup()  
